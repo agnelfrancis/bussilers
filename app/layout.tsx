@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
+
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
@@ -12,8 +13,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Bussily - Modern Bus Schedule",
   description: "A modern and user-friendly bus schedule application",
-}
-
+  icons: {
+    icon: "/favicon.ico", // Standard favicon
+    apple: "/favicon.ico", // For Apple devices
+  },
+};
 export default function RootLayout({
   children,
 }: {
