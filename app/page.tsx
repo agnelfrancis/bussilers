@@ -54,6 +54,19 @@ export default function Home() {
         ))}
       </div>
 
+      {/* Bussiler Conn Announcement */}
+      <div className="w-full max-w-2xl px-4 mt-12 text-center bg-red-50 p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold text-primary mb-4">New Software Release</h2>
+        <p className="text-lg text-gray-700 mb-4">
+          Bussiler Conn is a new platform where users can contribute and access updated bus schedules in real-time. Visit the platform to get the latest timetable and help improve bus timings.
+        </p>
+        <Link href="https://bussilerconn.netlify.app" passHref>
+          <Button className="text-lg py-3 px-6 bg-primary hover:bg-primary/90 text-white transition-all duration-300 shadow-lg hover:shadow-xl">
+            Visit Bussiler Conn
+          </Button>
+        </Link>
+      </div>
+
       <footer className="mt-16 text-center px-4 py-8 w-full bg-red-100 border-t-2 border-red-200">
         <h2 className="text-2xl font-semibold text-primary mb-4">About Bussily</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
@@ -79,4 +92,3 @@ export default function Home() {
     </div>
   )
 }
-
